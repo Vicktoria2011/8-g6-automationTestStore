@@ -9,3 +9,15 @@ export function login(user){
 
     cy.get('.heading1', {timeout: 2000}).should('contain', user.firstName);
 }
+
+export function findProduct(productName) {
+
+    cy.get('body').then( body => {
+        if(body.find(`.prdocutname[title="${productName}"]`).length > 0){
+            cy.get(`.prdocutname[title="${productName}"]`).click();
+        }else{
+            cy.contains('.pagination a', '>').click();
+            findProduct(productName);
+        }
+    })
+}

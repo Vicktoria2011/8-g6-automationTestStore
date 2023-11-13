@@ -1,8 +1,17 @@
 {
   "dependencies": {
-    "cypress": "^13.3.3"
+    "cypress": "^13.5.0"
   },
   "devDependencies": {
     "@faker-js/faker": "^8.2.0"
-  }
+  },
+  "name": "g6-automationteststore",
+  "description": "",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }

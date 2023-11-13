@@ -38,7 +38,7 @@ describe('Succesfull registration', ()=>{
         cy.get('#AccountFrm_agree').check();
         cy.get('button[title="Continue"]').click();
     
-        cy.get('.heading1', {timeout: 2000}).should('contain', user.firstName);
+        cy.get('.heading1', {timeout: 2000}).should('contain', "First_Name_test");
     })
     
     it('Authorization', () => {
